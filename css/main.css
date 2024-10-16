@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Assistant:wght@200..800&display=swap');
+
+
+/* ********************************************************************* */
+/*********************        start general rules     ****************** */
+/* ********************************************************************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+
+}
+
+:root {
+  --main-color-one: #EEEEEE;
+  --main-color-two: #CE1212;
+  --link-color: #7f7f90;
+  --link-active-color: #000;
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Amatic SC", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.gray_bg {
+  background-color: #eee;
+}
+
+.section {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+
+/* ********************************************************************* */
+/*********************        End general rules     ****************** */
+/* ********************************************************************* */
+
+
+
+/* ********************************************************************* */
+/*********************        start Navbar Styles     ****************** */
+/* ********************************************************************* */
+.nav_bar {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 45px 70px;
+  z-index: 999;
+  box-shadow: 0px 0px 14px 0px #0000001b;
+}
+
+.logo img {
+  width: 70%;
+}
+
+.nav_menu {
+  min-width: 30%;
+  max-width: 30%;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav_menu a {
+  color: var(--link-color);
+  font-size: 20px;
+}
+
+.nav_menu .active {
+  color: var(--link-active-color);
+  position: relative;
+}
+
+.nav_menu .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #CE1212;
+}
+
+.theme_icon i {
+  font-size: 26px;
+}
+
+/* ********************************************************************* */
+/*********************        End Navbar Styles     ****************** */
+/* ********************************************************************* */
+
+
+
+
+/* ********************************************************************* */
+/*********************       Start Hero Styles     ****************** */
+/* ********************************************************************* */
+
+.hero_section {
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content,
+.image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.content h1 {
+  font-size: 64px;
+}
+
+.content p {
+  line-height: 25px;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.content .btns {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10%;
+}
+
+.btns button {
+  border-radius: 0px 100vh 100vh;
+  color: #fff;
+  padding: 12px 25px;
+  background-color: #ce1212;
+  font-size: 16px;
+}
+
+.watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.watch .play_icon {
+  color: #000;
+  background-image: linear-gradient(to right, #ce1212 0 50%, transparent 50% 100%);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.play_icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: inherit;
+}
+
+.watch i {
+  color: #000;
+  z-index: 2;
+}
+
+.watch span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* ********************************************************************* */
+/*********************         End Hero Styles     ****************** */
+/* ********************************************************************* */
