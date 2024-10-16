@@ -13,22 +13,27 @@
   text-decoration: none;
   border: none;
 }
+
 :root {
   --main-color-one: #EEEEEE;
   --main-color-two: #CE1212;
   --link-color: #7f7f90;
   --link-active-color: #000;
 }
+
 body {
   font-family: "Assistant", sans-serif;
   width: 100%;
 }
-h1 {
+
+.Amatic {
   font-family: "Amatic SC", sans-serif;
 }
+
 .container {
   width: 100%;
 }
+
 .gray_bg {
   background-color: #eee;
 }
@@ -37,6 +42,23 @@ h1 {
   margin: 0 auto;
   min-height: 100vh;
 }
+
+.heading :not(span) {
+  text-align: center;
+  font-size: 48px;
+  padding: 0 0 25px;
+  font-weight: 400;
+}
+
+.heading p span {
+  padding: 0 12px;
+}
+
+.heading:first-child {
+  display: block;
+  text-align: center;
+}
+
 /* ********************************************************************* */
 /*********************        End general rules     ****************** */
 /* ********************************************************************* */
@@ -61,24 +83,29 @@ h1 {
   z-index: 999;
   box-shadow: 0px 0px 14px 0px #0000001b;
 }
+
 .logo img {
   width: 70%;
 }
+
 .nav_menu {
   width: 25%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .nav_menu a {
   color: var(--link-color);
   font-size: 18px;
   font-weight: 600;
 }
+
 .nav_menu .active {
   color: var(--link-active-color);
   position: relative;
 }
+
 .nav_menu .active::after {
   content: "";
   position: absolute;
@@ -88,9 +115,11 @@ h1 {
   height: 2px;
   background-color: #CE1212;
 }
+
 .theme_icon i {
   font-size: 26px;
 }
+
 /* ********************************************************************* */
 /*********************        End Navbar Styles     ****************** */
 /* ********************************************************************* */
@@ -108,6 +137,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+
 .content,
 .image {
   width: 40%;
@@ -115,18 +145,22 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .content {
   align-items: flex-start;
   flex-direction: column;
 }
+
 .content h1 {
   font-size: 64px;
 }
+
 .content p {
   line-height: 25px;
   font-size: 18px;
   margin: 20px 0;
 }
+
 .content .btns {
   width: 100%;
   display: flex;
@@ -134,19 +168,23 @@ h1 {
   align-items: center;
   gap: 10%;
 }
+
 .btns button {
   border-radius: 0px 100vh 100vh;
   color: #fff;
   padding: 12px 25px;
   background-color: #ce1212;
   font-size: 16px;
+  transition: all 0.4s ease-in-out;
 }
+
 .watch {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
+
 .watch .play_icon {
   color: #000;
   background-image: linear-gradient(to right, #ce1212 0 50%, transparent 50% 100%);
@@ -158,6 +196,7 @@ h1 {
   align-items: center;
   position: relative;
 }
+
 .play_icon::before {
   content: "";
   position: absolute;
@@ -169,19 +208,32 @@ h1 {
   height: 40px;
   border-radius: inherit;
 }
+
 .watch i {
   color: #000;
   z-index: 2;
 }
+
 .watch span {
   font-size: 18px;
   font-weight: 600;
 }
+
+.btns button:hover {
+  background-color: #e61414;
+}
+
+.watch:hover i,
+.watch:hover span {
+  color: #e61414;
+}
+
 .image img {
   width: 100%;
   height: 100%;
   filter: drop-shadow(4px 4px 9px #000a);
 }
+
 .image img:hover {
   animation: move 1s infinite;
 }
@@ -240,39 +292,36 @@ h1 {
 /* ********************************************************************* */
 /*********************         Start Chefs Styles     ****************** */
 /* ********************************************************************* */
-.chefs-section{
+.chefs-section {
   padding: 80px 0;
 }
-.chefs-section .content{
-  text-align: center;
-}
-.chefs-section .content .span-2{
+
+.chefs-section .heading .span-2 {
   color: #CE1212;
 }
 
-
-
-
-
-.chefs-section .full-items{
+.chefs-section .full-items {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
-  padding: 0 100px;
-  gap: 25px;
-  
+  justify-content: space-around;
 }
-.chefs-section .item{
-  width: 33.33%;
+
+.chefs-section .item {
+  width: 30%;
+  border-radius: 12px;
+  overflow: hidden;
 }
-.chefs-section .item img{
+
+.chefs-section .item img {
   width: 100%;
 }
-.chefs-section .full-items .content-box{
+
+.chefs-section .full-items .content-box {
   text-align: center;
   padding: 30px 0;
 }
-.chefs-section .full-items h4{
+
+.chefs-section .full-items h4 {
   padding: 10px 0;
   font-size: 20px;
 }
