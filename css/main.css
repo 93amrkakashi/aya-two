@@ -37,10 +37,15 @@ body {
 .gray_bg {
   background-color: #eee;
 }
+
 .section {
   width: 90%;
   margin: 0 auto;
   min-height: 100vh;
+}
+
+.heading {
+  padding: 60px 0 40px;
 }
 
 .heading :not(span) {
@@ -58,6 +63,7 @@ body {
   display: block;
   text-align: center;
 }
+
 
 /* ********************************************************************* */
 /*********************        End general rules     ****************** */
@@ -296,7 +302,7 @@ body {
   padding: 80px 0;
 }
 
-.chefs-section .heading .span-2 {
+.span-2 {
   color: #CE1212;
 }
 
@@ -308,20 +314,224 @@ body {
 
 .chefs-section .item {
   width: 30%;
-  border-radius: 12px;
-  overflow: hidden;
+  position: relative;
+  box-shadow: 3px 3px 15px 0px #0000001a;
+}
+
+.chefs-section .item div {
+  position: relative;
 }
 
 .chefs-section .item img {
   width: 100%;
 }
 
+.chefs-section .item div::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background: url('../images/shape.svg');
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 40px;
+}
+
 .chefs-section .full-items .content-box {
   text-align: center;
   padding: 30px 0;
+  width: 90%;
+  margin: auto;
 }
 
 .chefs-section .full-items h4 {
-  padding: 10px 0;
   font-size: 20px;
 }
+
+.content-box span {
+  padding: 12px 0;
+  display: inline-block;
+}
+
+
+/* ********************************************************************* */
+/*********************         End Chefs Styles     ****************** */
+/* ********************************************************************* */
+
+
+
+
+/* ********************************************************************* */
+/*********************         Start Gallery Styles     ****************** */
+/* ********************************************************************* */
+
+.gallery-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.gallery-box .gallery-item {
+  width: 100%;
+  text-align: center;
+  border: 5px solid #fff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery-content {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.429);
+  top: 500px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery-item:hover .gallery-content {
+  opacity: 1;
+  top: 5px;
+}
+.gallery-item img {
+  transition: all 0.5s ease-in-out;
+}
+.gallery-item:hover img {
+  transform: scale(1.2);
+}
+
+.gallery-box .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ********************************************************************* */
+/*********************         End Gallery Styles     ****************** */
+/* ********************************************************************* */
+
+
+
+/* ********************************************************************* */
+/*********************         Start Contact Styles     ****************** */
+/* ********************************************************************* */
+
+
+.contact-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-item {
+  width: 100%;
+}
+
+.contact-item:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-item iframe {
+  width: 100%;
+  min-height: 350px;
+}
+
+
+.social {
+  width: 48%;
+  height: 100px;
+  background: #000;
+}
+
+
+
+
+
+.contact-item form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 25px;
+  box-shadow: 0 0 1.875rem #00000014;
+  padding: 16px;
+  margin: 30px 0;
+}
+
+form .form_item {
+  width: 100%;
+}
+
+
+form .f-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+form .f-1 input {
+  width: 50%;
+  padding: 10px 8px;
+  font-size: 16px;
+  border: 1px solid #737272;
+  font-weight: 600;
+}
+
+form .f-2 input,
+form .f-3 textarea {
+  width: 100%;
+  min-height: 45px;
+  padding: 2px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #737272;
+
+}
+
+.contact-item .btn {
+  background-color: var(--main-color-two);
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 15px;
+  margin-top: 0;
+  padding: 15px 25px;
+  align-self: center;
+}
+
+
+
+
+
+
+/* ********************************************************************* */
+/*********************         Start Contact Styles     ****************** */
+/* ********************************************************************* */
