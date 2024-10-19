@@ -19,7 +19,7 @@
     <!-- Start Navbar -->
     <nav class="nav_bar">
       <div class="logo">
-        <img src="images/logo.png" />
+        <img href="#home" src="images/logo.png" />
       </div>
       <div class="nav_menu">
         <a href="#home" class="active">Home</a>
@@ -30,10 +30,20 @@
       <div class="theme_icon">
         <i class="fa-solid fa-moon"></i>
       </div>
+      <div class="mobile-nav">
+        <i class="fa-solid fa-bars"></i>
+        <div class="mobile-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#chefs">Chefs</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
     </nav>
     <!--End Navbar-->
     <!-- Start Hero Section -->
-    <div class="container gray_bg">
+    <div class="container gray_bg" id="home">
       <div class="section hero_section">
         <div class="content">
           <h1 class="Amatic">
@@ -62,7 +72,7 @@
     <!-- End Hero Section -->
 
     <!-- Start Chefs Section -->
-    <div class="chefs-section section">
+    <div class="chefs-section section" id="chefs">
       <div class="heading">
         <span>CHEFS</span>
         <p class="Amatic">Our<span class="span-2">Proffesional</span>Chefs</p>
@@ -70,6 +80,12 @@
 
       <div class="full-items">
         <div class="item">
+          <div class="chef-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
           <div>
             <img src="images/images02.jpg" />
           </div>
@@ -85,6 +101,12 @@
         </div>
 
         <div class="item">
+          <div class="chef-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
           <div>
             <img src="images/chef-2.png" />
           </div>
@@ -100,6 +122,12 @@
         </div>
 
         <div class="item">
+          <div class="chef-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
           <div>
             <img src="images/images04.jpg" />
           </div>
@@ -118,7 +146,7 @@
     <!-- End Chefs Section -->
 
     <!-- Start Gallery Section -->
-    <div class="container gray_bg">
+    <div class="container gray_bg" id="gallery">
       <div class="gallery-section section">
         <div class="heading">
           <span>GALLERY</span>
@@ -196,7 +224,7 @@
     </div>
     <!-- End Gallery Section -->
     <!-- Start Contact Section -->
-    <div class="contact-section section">
+    <div class="contact-section section" id="contact">
       <div class="heading">
         <span>CONTACT</span>
         <p class="Amatic">Need Help ? <span class="span-2">Contact Us</span></p>
@@ -212,29 +240,29 @@
           ></iframe>
         </div>
         <div class="contact-item">
-          <div class="social">
+          <div class="social gray_bg">
             <i class="fa-regular fa-map"></i>
             <div class="social-box">
               <h4>Our Address</h4>
               <span>A108 Adam Street, New York, NY 535022</span>
             </div>
           </div>
-          <div class="social">
+          <div class="social gray_bg">
             <i class="fa-regular fa-envelope"></i>
             <div class="social-box">
               <h4>Email Us</h4>
               <span>contact@example.com</span>
             </div>
           </div>
-          <div class="social">
+          <div class="social gray_bg">
             <i class="fa-solid fa-phone"></i>
             <div class="social-box">
               <h4>Call Us</h4>
               <span>+1 5589 55488 55</span>
             </div>
           </div>
-          <div class="social">
-            <i class="fa-solid fa-rotate-left"></i>
+          <div class="social gray_bg">
+            <i class="fa-solid fa-share-nodes"></i>
             <div class="social-box">
               <h4>Opening Hours</h4>
               <span
@@ -270,69 +298,76 @@
     </div>
     <!-- End Contact Section -->
     <!-- Start Footer -->
-    <div class="footer">
-      <div class="social-media">
-        <div class="logo">
-          <img src="images/logo-2.png" />
+
+    <div class="container-black">
+      <div class="footer section">
+        <div class="social-media">
+          <div class="footer-logo">
+            <img src="images/favicon.png" />
+            <img src="images/logo.png" alt="" />
+          </div>
+          <p>
+            Mealify is a restaurant landing page that <br />
+            offers a delicious dining experience to its <br />
+            customers.
+          </p>
+          <h3>Social Media</h3>
+          <div class="footer-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
         </div>
-        <p>
-          Mealify is a restaurant landing page that <br />
-          offers a delicious dining experience to its <br />
-          customers.
-        </p>
-        <h3>Social Media</h3>
-        <hr />
-        <div class="footer-icons">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-        </div>
-      </div>
-      <div class="social-media">
-        <h3>Subscribe our Newsletter</h3>
-        <p>
-          Don't miss out on our latest menu updates and exclusive offers - join
-          our newsletter <br />
-          today and stay up-to-date with all things Mealify!
-        </p>
-        <form>
-          <div class="form">
+        <div class="social-media">
+          <h3>Subscribe our Newsletter</h3>
+          <p>
+            Don't miss out on our latest menu updates and exclusive offers -
+            join our newsletter <br />
+            today and stay up-to-date with all things Mealify!
+          </p>
+          <form>
             <input
               type="text"
               required
               placeholder="Enter Your Emaill Address"
             />
-          </div>
-          <i class="fa-solid fa-envelope"></i>
-          <button>Subscribe</button>
-        </form>
-        <div class="qick-links">
-          <h3>Qick Links</h3>
-          <div class="part-1">
-            <p>>Menu</p>
-            <p>>About Us</p>
-            <p>>Testimonila</p>
-          </div>
-          <div class="part-2">
-            <p>>Promo</p>
-            <p>>Contact</p>
-            <p>>Our Partners</p>
+
+            <button>
+              <i class="fa-solid fa-envelope"></i>
+              Subscribe
+            </button>
+          </form>
+          <div class="qick-links">
+            <h3>Qick Links</h3>
+            <div class="linkat">
+              <div class="part-1">
+                <p>> Menu</p>
+                <p>> About Us</p>
+                <p>> Testimonila</p>
+              </div>
+              <div class="part-2">
+                <p>> Promo</p>
+                <p>> Contact</p>
+                <p>> Our Partners</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="social-media">
-        <div class="con-get">
-          <i class="fa-solid fa-location-pin"></i>
-          <span>A108 Adam Street, New York, NY 535022</span>
-        </div>
-        <div class="con-get">
-          <i class="fa-solid fa-envelope"></i>
-          <span>contact@example.com</span>
-        </div>
-        <div class="con-get">
-          <<i class="fa-solid fa-phone"></i>
-          <span>+1 5589 55488 55</span>
+        <div class="social-media">
+          <h3>Get in Touch</h3>
+          <div class="con-get">
+            <i class="fa-solid fa-location-pin"></i>
+            <span>A108 Adam Street, New York, NY 535022</span>
+          </div>
+          <div class="con-get">
+            <i class="fa-solid fa-envelope"></i>
+            <span>contact@example.com</span>
+          </div>
+          <div class="con-get">
+            <i class="fa-solid fa-phone"></i>
+            <span>+1 5589 55488 55</span>
+          </div>
         </div>
       </div>
     </div>
